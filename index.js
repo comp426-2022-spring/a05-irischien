@@ -2,7 +2,7 @@
 const express = require('express');
 const minimist = require('minimist');
 const morgan = require('morgan');
-const db = require("./database.js");
+const db = require("src\services\database.js");
 const fs = require('fs');
 const app = express()
 

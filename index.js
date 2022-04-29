@@ -2,7 +2,8 @@
 const express = require('express');
 const minimist = require('minimist');
 const morgan = require('morgan');
-const db = require("src\services\database.js");
+const logdb = require('./src/services/database.js')
+
 const fs = require('fs');
 const app = express()
 
@@ -16,6 +17,8 @@ app.use(express.static('./public'));
 // Make Express use its own built-in body parser for both urlencoded and JSON body data.
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+
 
 
 // if helped is asked, show the message below, then exit with code 0 

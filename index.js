@@ -18,6 +18,7 @@ app.use(express.static('./public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+const port = args.port || args.p || process.env.PORT || 5000
 
 
 
